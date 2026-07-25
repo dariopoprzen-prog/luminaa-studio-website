@@ -136,6 +136,19 @@ h1.center-title, .hero h1 { text-align: center; }
 .btn-outline:hover { background: var(--gold); color: #14140f; }
 .btn-center { display:flex; justify-content:center; margin: 28px 0; }
 
+.phone-shot {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+.phone-shot img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
 .pricing-row {
   display: flex;
   gap: 24px;
