@@ -65,17 +65,17 @@ main {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 48px;
+  margin-top: 36px;
   flex-wrap: wrap;
 }
 
 .tagline {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--muted);
-  margin: 0 0 8px;
+  margin: 0;
 }
-.tagline strong { color: var(--text); display:block; font-size: 22px; margin-bottom: 6px; }
+.tagline strong { color: var(--text); display:block; font-size: 38px; margin-bottom: 10px; }
 
 h1 {
   font-family: 'Playfair Display', Georgia, serif;
@@ -146,14 +146,15 @@ form button.btn { align-self: center; margin-top: 4px; }
   background: var(--gold);
   color: #14140f;
   text-decoration: none;
-  padding: 14px 30px;
+  padding: 16px 34px;
   border-radius: 999px;
   font-weight: 600;
   font-family: 'Lora', Georgia, serif;
-  font-size: 15px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
 }
+.hero .btn { padding: 18px 38px; font-size: 17px; }
 .btn:hover { background: var(--gold-dark); }
 .btn-outline {
   background: transparent;
@@ -233,4 +234,6 @@ ul { padding-left: 20px; }
   h1 { font-size: 30px; }
   header { padding: 18px 20px; }
   nav a { margin-left: 16px; font-size: 13px; }
+  .tagline strong { font-size: 28px; }
+  .tagline { font-size: 18px; }
 }
