@@ -114,6 +114,33 @@ h1.center-title, .hero h1 { text-align: center; }
   margin-bottom: 18px;
 }
 
+form.card { display: flex; flex-direction: column; gap: 18px; }
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 15px;
+  resize: vertical;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+form button.btn { align-self: center; margin-top: 4px; }
+
 .btn {
   display: inline-block;
   background: var(--gold);

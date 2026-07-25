@@ -18,9 +18,29 @@
 </header>
 <main>
   <h1 class="center-title">Kontakt</h1>
-  <p class="lead center">Fragen zu Luminaa oder Interesse an einer Zusammenarbeit? Meld dich einfach.</p>
-  <div class="card center">
-    <p>E-Mail: <a href="mailto:cam@luminaastudio.com" style="color:var(--gold)">cam@luminaastudio.com</a></p>
+  <p class="lead center">Fragen zu Luminaa oder Interesse an einer Zusammenarbeit? Schreib uns direkt über das Formular.</p>
+
+  <form id="formular" class="card" action="https://formsubmit.co/cam@luminaastudio.com" method="POST">
+    <input type="hidden" name="_subject" value="Neue Anfrage über luminaastudio.com">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://luminaastudio.com/danke.html">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <label>Name
+      <input type="text" name="Name" required>
+    </label>
+    <label>E-Mail
+      <input type="email" name="E-Mail" required>
+    </label>
+    <label>Nachricht
+      <textarea name="Nachricht" rows="5" required></textarea>
+    </label>
+    <button type="submit" class="btn">Nachricht senden</button>
+  </form>
+
+  <div class="card center" style="margin-top:18px">
+    <p>Oder direkt per E-Mail: <a href="mailto:cam@luminaastudio.com" style="color:var(--gold)">cam@luminaastudio.com</a></p>
     <p style="color:var(--muted)">Dario Poprzen · Milutina Milankovića 120e · 11200 Belgrad, Serbien</p>
   </div>
 </main>
