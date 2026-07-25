@@ -177,30 +177,90 @@ form button.btn { align-self: center; margin-top: 4px; }
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-.pricing-row {
-  display: flex;
+.pricing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
-  align-items: flex-start;
+  margin: 32px 0 48px;
+  align-items: stretch;
 }
-.pricing-row:last-of-type { border-bottom: 1px solid var(--line); }
-.pricing-num {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 22px;
+.pricing-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.pricing-card-highlight {
+  border: 1px solid var(--gold);
+  box-shadow: 0 20px 50px rgba(233, 198, 95, 0.14);
+}
+.pricing-badge {
+  display: inline-block;
+  align-self: flex-start;
+  border: 1px solid var(--gold);
   color: var(--gold);
-  width: 28px;
-  flex-shrink: 0;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 22px;
 }
-.pricing-title {
+.pricing-badge-solid {
+  background: var(--gold);
+  color: #14140f;
+  border: none;
+}
+.pricing-card-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 26px;
   margin-bottom: 6px;
 }
-.pricing-desc {
+.pricing-card-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.pricing-card-price span {
+  display: block;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 400;
+  font-size: 14px;
   color: var(--muted);
+  margin-top: 3px;
+}
+.pricing-card-sub {
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+  margin: 14px 0 18px;
+}
+.pricing-card-desc {
   font-size: 15px;
+  color: var(--text);
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.pricing-card-for {
+  font-size: 13px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-bottom: 22px;
+}
+.pricing-card-for strong { color: var(--text); }
+.pricing-card-btn { align-self: stretch; text-align: center; }
+
+@media (max-width: 700px) {
+  .pricing-cards { grid-template-columns: 1fr; }
 }
 
 footer {
